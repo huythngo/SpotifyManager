@@ -4,7 +4,7 @@ import { SearchResult } from "../SearchResult/SearchResult";
 import { PlayList } from "../PlayList/PlayList";
 import { SearchBar } from "../SearchBar/SearchBar";
 import Spotify from "../../util/Spotify";
-import { usePromiseTracker } from "react-promise-tracker";
+
 
 const searchResult = [];
 const playlistName = "";
@@ -97,8 +97,8 @@ class App extends React.Component {
                   {this.state.userProfile.name ? (
                     this.state.userProfile.name
                   ) : (
-                    <span>there</span>
-                  )}
+                      <span>there</span>
+                    )}
                 </h2>
               </div>
               <SearchBar onSearch={this.search} />
