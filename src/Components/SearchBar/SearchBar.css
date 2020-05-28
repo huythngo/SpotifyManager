@@ -1,0 +1,31 @@
+input {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  margin: 3.5rem auto 1.5rem;
+  width: 70%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.search-button {
+  display: block;
+  width: 10rem;
+  border-radius: 7rem;
+  background-color: #010c3f;
+  margin: 0 auto;
+  border-color: transparent;
+  background-color: rgb(29, 185, 84);
+  color: white;
+}
+.search-button:hover {
+  background-color: rgb(18, 130, 33);
+  border-color: transparent;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  input {
+    margin: 2.5rem auto 1.5rem;
+  }
+}

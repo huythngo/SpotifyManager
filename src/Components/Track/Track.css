@@ -1,0 +1,49 @@
+.Track {
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+  overflow: auto;
+}
+
+.Track-action {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 2rem;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.Track-action:hover {
+  color: rgba(265, 265, 265, 0.5);
+}
+
+.Track-information {
+  display: flex;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 72px;
+}
+
+.Track-information h3 {
+  margin-bottom: 0.22rem;
+  font-weight: bold;
+}
+
+.Track-information p {
+  font-size: 0.83rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
+}
+.Track-img {
+  padding-right: 1rem;
+}

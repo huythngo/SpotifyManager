@@ -1,0 +1,35 @@
+.PlayList {
+  font-size: large;
+  background-color: rgba(24, 24, 24, 0.95);
+  padding: 2rem 1rem;
+  margin: 2.3rem auto 3rem;
+  overflow: auto;
+  height: 60rem;
+}
+.PlayList input {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid gray;
+  background: transparent;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+}
+
+.PlayList .add-button {
+  display: block;
+  min-width: 160px;
+  border-radius: 7rem;
+  background-color: rgb(29, 185, 84);
+  margin: 2.5rem auto;
+  overflow: hidden;
+  border-color: transparent;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
