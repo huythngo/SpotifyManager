@@ -24,14 +24,15 @@ html,
 }
 /* nav bar */
 .nav {
-  background-color: rgb(29, 185, 84);
+  background-color: rgba(24, 24, 24);
   position: fixed;
   width: 100%;
   padding: 1.2rem 0;
   z-index: 100;
 }
 .nav h1 {
-  color: white;
+  color: #1db954;
+
   font-size: 1.85rem;
   font-family: Poppins, sans-serif;
 }
