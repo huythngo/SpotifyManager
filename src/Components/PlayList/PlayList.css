@@ -33,6 +33,10 @@
   border-color: transparent;
   color: white;
 }
+.add-button:focus {
+  outline: none;
+  box-shadow: none;
+}
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;

@@ -16,6 +16,7 @@ class App extends React.Component {
       playlistTracks: playlistTracks,
       playlistName: playlistName,
       userProfile: {},
+      isSaveSuccess: false,
     };
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
@@ -57,11 +58,21 @@ class App extends React.Component {
           playlistName: "New Playlist",
           playlistTracks: [],
         });
+        this.handleSaveStatus();
       },
       (e) => {
         console.log(e.message);
       }
     );
+  }
+
+  handleSaveStatus() {
+    this.setState({ isSaveSuccess: true });
+    if (this.state.isSaveSuccess) {
+      setTimeout(() => {
+        this.setState({ isSaveSuccess: false });
+      }, 2000);
+    }
   }
 
   getUserProfile() {
@@ -87,6 +98,11 @@ class App extends React.Component {
             <h1 className='text-center'>Spotify Manger</h1>
           </nav>
         </div>
+        {this.state.isSaveSuccess && (
+          <div class='alert alert-success alert-bar' role='alert'>
+            Saved Succesfully
+          </div>
+        )}
         <div className='App container-fluid'>
           <div className='row justify-content-center '>
             <div className='col-xs-10 col-sm-10 col-md-6 col-lg-6 col-xl-5 text-center'>
@@ -126,7 +142,8 @@ class App extends React.Component {
             <i class='fab fa-github github'></i>
           </a>
           <p>
-            Built with <i className='fas fa-pizza-slice'></i> and{" "}
+            Built by <span style={{ color: "white" }}>Huy Ngo</span> with{" "}
+            <i className='fas fa-pizza-slice'></i> and{" "}
             <i class='fas fa-mug-hot'></i>
           </p>
         </footer>

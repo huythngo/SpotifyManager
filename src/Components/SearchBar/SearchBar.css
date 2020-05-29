@@ -2,7 +2,7 @@ input {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-radius: 0.8rem;
-  margin: 3.5rem auto 1.5rem;
+  margin: 2.5rem auto 1.5rem;
   width: 70%;
   box-sizing: border-box;
   display: block;
@@ -26,6 +26,10 @@ input {
 }
 input:focus {
   outline: none;
+}
+.search-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 768px) {

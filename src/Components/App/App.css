@@ -32,18 +32,29 @@ html,
 }
 .nav h1 {
   color: #1db954;
-
   font-size: 1.85rem;
   font-family: Poppins, sans-serif;
 }
 
-.user-info {
-  margin-top: 2rem;
+.alert-bar {
+  position: fixed;
+  width: 100%;
+  top: 4.25rem;
+  padding: 0.3rem;
+  text-align: center;
   color: white;
+  background-color: rgb(29, 185, 84);
+  border: none;
+  z-index: 99;
+}
+.user-info {
+  font-family: "Dancing Script", cursive;
+  margin-top: 2rem;
+  color: black;
 }
 
 .user-info h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 footer {
