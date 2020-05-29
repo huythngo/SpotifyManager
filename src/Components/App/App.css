@@ -3,8 +3,7 @@ html,
 #root {
   height: 100%;
   margin: auto;
-  /* background: url("http://jammming.s3-website-us-east-1.amazonaws.com/static/media/background_photo_desktop.37be7357.jpg"); */
-  /* background-color: rgb(24, 24, 24); */
+
   background: url(../../images/background.jpg);
   background-size: cover;
   background-position: center;
@@ -45,6 +44,30 @@ html,
 .user-info h2 {
   font-size: 2.5rem;
   font-weight: 600;
+}
+footer {
+  width: 100%;
+  background-color: rgba(24, 24, 24);
+  color: gray;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+footer p {
+  padding-top: 0.2rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+footer i {
+  color: black;
+  font-size: 1rem;
+
+  filter: brightness(0) invert(1);
+}
+.github {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
 }
 ::-webkit-scrollbar {
   width: 0px;

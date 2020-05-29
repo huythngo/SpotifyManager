@@ -23,7 +23,7 @@ export class SearchBar extends React.Component {
         <input
           type='text'
           className='text-center'
-          placeholder='Enter a Song Title'
+          placeholder='Enter a Song or Artist'
           onChange={this.handleTermChange}
         />
 

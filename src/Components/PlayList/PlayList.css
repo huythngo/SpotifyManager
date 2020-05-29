@@ -19,6 +19,10 @@
   padding-left: 0;
 }
 
+.PlayList input:focus {
+  outline: none;
+}
+
 .PlayList .add-button {
   display: block;
   min-width: 160px;

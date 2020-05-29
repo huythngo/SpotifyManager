@@ -6,6 +6,7 @@ input {
   width: 70%;
   box-sizing: border-box;
   display: block;
+  border: 1px solid gray;
 }
 
 .search-button {
@@ -22,6 +23,9 @@ input {
   background-color: rgb(18, 130, 33);
   border-color: transparent;
   color: white;
+}
+input:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 768px) {
